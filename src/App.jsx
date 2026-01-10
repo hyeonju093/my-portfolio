@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import profileimg from './assets/profile.jpg.webp';
+import portfolioImg from './assets/portfolioimg.jpg';
+import capstoneImg from './assets/teamprojectimg.jpg';
 import './App.css'; // 작성한 CSS 불러오기
 import { Tags } from 'lucide-react';
 
@@ -23,25 +25,20 @@ function App() {
 
   const projectList = [
     {
-      title: "프로젝트 1",
-      period: "2024.02 -  2024.12",
-      description: "프로젝트 1 설명",
-      tags: ["HTML5", "CSS"],
-      link: "링크"
+      title: "캡스톤디자인(낙상감지시스템)",
+      period: "2025.02 - 2025.11",
+      description: "인공지능(MediaPipe, PyTorch)과 Django를 결합하여 실시간 낙상 감지 시스템을 제작하였습니다 저는 팀프젝트에서 프론트엔드 구현을 맡았고 HTML을 사용해 프론트엔드를 구현하였습니다",
+      image: capstoneImg,
+      tags: ["HTML", "CSS", "JavaScript"],
+      link: "https://github.com/TimePise/Capstone-Design"
     },
     {
-      title: "프로젝트 2",
-      period: "2025.11 - 2026.01",
-      description: "프로젝트 2 설명",
-      tags: ["React", "CSS", "Vite"],
-      link: "링크"
-    },
-    {
-      title: "프론트엔드 포트폴리오",
+      title: "웹 사이트 포트폴리오",
       period: "2025.12 - 2026.01",
-      description: "React를 주 언어로 사용하여 프론트엔드 개발자 포트폴리오를 웹사이트 형식으로 제작하였습니다",
+      description: "React와 Vite를 사용하여 프론트엔드 개발자 포트폴리오를 웹사이트 형식으로 제작하였습니다",
+      image: portfolioImg,
       tags: ["React", "CSS", "Vite"],
-      link: "링크"
+      link: "https://hyeonju.me.kr/"
     }
   ];
 
@@ -159,8 +156,12 @@ function App() {
           <button className="arrow prev" onClick={prevProject}>&lt;</button>
 
           <div className="project-card">
-            <div className="project-image-placeholder">
-              <span>Project Image Area</span>
+            <div className="project-image-container">
+              <img
+                src={projectList[currentIdx].image}
+                alt={projectList[currentIdx].title}
+                className="project-image"
+              />
             </div>
 
             <div className="project-info">
@@ -191,7 +192,7 @@ function App() {
         <div className="footer-bottom">
           <p>© 2024 Hong Hyeon-ju. All rights reserved.</p>
           <div className="footer-links">
-            <a href="깃허브링크" target="_blank" rel="noreferrer">Github</a>
+            <a href="https://github.com/hyeonju093" target="_blank" rel="noreferrer">Github</a>
           </div>
         </div>
       </footer>

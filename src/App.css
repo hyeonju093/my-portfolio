@@ -301,14 +301,25 @@ body {
   min-height: 400px;
 }
 
-.project-image-placeholder {
-  flex: 1.2;
-  background-color: #e0e0e0;
+.project-image-container {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #888;
-  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
 }
 
 .project-info {
