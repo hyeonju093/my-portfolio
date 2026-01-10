@@ -28,7 +28,7 @@ my-portfolio/
  ┣ index.html
  ┣ package.json
  ┗ README.md
-
+```
 ### [Preview]
  ![portfolioimg](https://github.com/user-attachments/assets/4eb48a7d-d7fb-4c6c-9683-bc6e41eb9e62)
 
@@ -36,4 +36,3 @@ my-portfolio/
 ### [Contact]
     Email : hyeonjuhong67@gmail.com
     Phone : 010-4621-8494
-    Github : github.com/hyeonju093
