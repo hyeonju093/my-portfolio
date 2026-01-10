@@ -15,14 +15,17 @@ Key Features
     전체적으로 가독성을 높이고, 컨셉을 극대화시킬 수 있는 폰트를 사용했습니다.
 
 Project Structure
-src/
- ┣ assets/          # 프로필 및 프로젝트 이미지 파일
- ┣ font/            # 폰트 파일
- ┣ App.jsx          # 메인 로직 및 섹션 구조
- ┣ App.css          # 전체 스타일링 및 애니메이션 정의
- ┗ main.jsx         # 엔트리 포인트
 
- Preview
+src/
+  ┣ assets/          # 프로필 및 프로젝트 이미지 파일
+  ┣ font/            # 폰트 파일
+  ┣ App.jsx          # 메인 로직 및 섹션 구조
+  ┣ App.css          # 전체 스타일링 및 애니메이션 정의
+  ┗ main.jsx         # 엔트리 포인트
+
+Preview
+ ![portfolioimg](https://github.com/user-attachments/assets/4eb48a7d-d7fb-4c6c-9683-bc6e41eb9e62)
+
 
 Contact
     Email : hyeonjuhong67@gmail.com
