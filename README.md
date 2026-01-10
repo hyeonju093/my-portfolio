@@ -1,16 +1,30 @@
-# React + Vite
+Hyeonju's Portfolio
+"사용자가 오래 머물고 싶은 웹을 만듭니다."
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+개발자로서 정체성을 담은 코딩 컨셉의 프론트엔드 포트폴리오 웹사이트입니다.
 
-Currently, two official plugins are available:
+Tech Stack
+Framework : React(Vite)
+Styling : CSS3
+Icons : Lucide-React
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Key Features
+1. Developer Desktop Interface
+    사용자가 웹사이트에 접속했을 때 개발자의 편집기를 엿보는 듯한 경험을 제공하기 위해 코딩화면과 같은 인터페이스를 구현했습니다.
+2. Personalized Design System
+    전체적으로 가독성을 높이고, 컨셉을 극대화시킬 수 있는 폰트를 사용했습니다.
 
-## React Compiler
+Project Structure
+src/
+ ┣ assets/          # 프로필 및 프로젝트 이미지 파일
+ ┣ font/            # 폰트 파일
+ ┣ App.jsx          # 메인 로직 및 섹션 구조
+ ┣ App.css          # 전체 스타일링 및 애니메이션 정의
+ ┗ main.jsx         # 엔트리 포인트
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ Preview
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Contact
+    Email : hyeonjuhong67@gmail.com
+    Phone : 010-4621-8494
+    Github : github.com/hyeonju093
