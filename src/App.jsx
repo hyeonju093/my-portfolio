@@ -65,12 +65,52 @@ function App() {
         </ul>
       </nav>
 
-      <header className="hero">
+      {/* <header className="hero">
         <h2>{displayText}<span className="cursor"></span></h2>
         <p>
           안녕하세요 사용자가 오래 머무르고 싶은 웹사이트를 제작하는 프론트엔드 개발자 홍현주입니다.<br/>
           변화를 두려워하지 않고 끊임없이 학습하여 서비스의 완성도를 높일 수 있는 개발자가 되고 싶습니다.
         </p>
+      </header> */}
+      {/* 수정된 Hero 섹션 */}
+      <header className="hero">
+        <div className="stars"></div> {/* 우주 배경 효과 레이어 */}
+        
+        <div className="code-window">
+          {/* 상단 바 버튼들 */}
+          <div className="window-header">
+            <div className="action-buttons">
+              <span className="dot red"></span>
+              <span className="dot yellow"></span>
+              <span className="dot green"></span>
+            </div>
+            <div className="file-tab">about_me.js</div>
+          </div>
+
+          {/* 코드 편집기 본문 */}
+          <div className="code-body">
+            <div className="line-numbers">
+              <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+            </div>
+            <div className="code-content">
+              <pre>
+                <code>
+                  <span className="keyword">const</span> <span className="variable">developer</span> = {"{"} <br />
+                  &nbsp;&nbsp;name: <span className="string">'홍현주'</span>, <br />
+                  &nbsp;&nbsp;role: <span className="string">'Frontend Developer'</span>, <br />
+                  &nbsp;&nbsp;focus: <span className="string">'User Experience'</span> <br />
+                  {"}"};
+                </code>
+              </pre>
+              {/* 타이핑 애니메이션 제목 */}
+              <h2 className="typing-title">{displayText}<span className="cursor"></span></h2>
+              <p className="hero-subtitle">
+                안녕하세요 사용자가 오래 머무르고 싶은 웹사이트를 제작하는 <br/> 프론트엔드 개발자 홍현주입니다.<br/>
+                변화를 두려워하지 않고 끊임없이 학습하여 서비스의 완성도를 높일 수 있는 <br/> 개발자가 되고 싶습니다.
+              </p>
+            </div>
+          </div>
+        </div>
       </header>
 
       <section id="about" className="about-section">
