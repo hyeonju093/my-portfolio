@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import profileimg from './assets/profile.jpg.webp';
 import portfolioImg from './assets/portfolioimg.jpg';
 import capstoneImg from './assets/teamprojectimg.jpg';
+import shopImg from './assets/shoppingmallimg.jpg';
 import './App.css'; // 작성한 CSS 불러오기
 import { Tags } from 'lucide-react';
 
@@ -27,7 +28,7 @@ function App() {
     {
       title: "캡스톤디자인(낙상감지시스템)",
       period: "2025.02 - 2025.11",
-      description: "인공지능(MediaPipe, PyTorch)과 Django를 결합하여 실시간 낙상 감지 시스템을 제작하였습니다 저는 팀프젝트에서 프론트엔드 구현을 맡았고 HTML을 사용해 프론트엔드를 구현하였습니다",
+      description: "인공지능(MediaPipe, PyTorch)과 Django를 결합하여 실시간 낙상 감지 시스템을 제작했습니다 저는 팀프젝트에서 프론트엔드 구현을 맡았고 HTML을 사용해 프론트엔드를 구현했습니다",
       image: capstoneImg,
       tags: ["HTML", "CSS", "JavaScript"],
       link: "https://github.com/TimePise/Capstone-Design"
@@ -35,10 +36,18 @@ function App() {
     {
       title: "웹 사이트 포트폴리오",
       period: "2025.12 - 2026.01",
-      description: "React와 Vite를 사용하여 프론트엔드 개발자 포트폴리오를 웹사이트 형식으로 제작하였습니다",
+      description: "React와 Vite를 사용하여 프론트엔드 개발자 포트폴리오를 웹사이트 형식으로 제작했습니다",
       image: portfolioImg,
       tags: ["React", "CSS", "Vite"],
       link: "https://hyeonju.me.kr/"
+    },
+    {
+      title: "웹 쇼핑몰 구현",
+      period: "2026.01",
+      description: "React와 Redux Toolkit, Axios를 활용해 실무에서 많이 활용되는 기능으로 구현된 쇼핑몰 사이트를 제작하였습니다",
+      image: shopImg,
+      tags: ["React", "Redux Toolkit", "CSS Modules"],
+      link: "https://github.com/hyeonju093/shopping-mall-react"
     }
   ];
 
@@ -65,19 +74,10 @@ function App() {
         </ul>
       </nav>
 
-      {/* <header className="hero">
-        <h2>{displayText}<span className="cursor"></span></h2>
-        <p>
-          안녕하세요 사용자가 오래 머무르고 싶은 웹사이트를 제작하는 프론트엔드 개발자 홍현주입니다.<br/>
-          변화를 두려워하지 않고 끊임없이 학습하여 서비스의 완성도를 높일 수 있는 개발자가 되고 싶습니다.
-        </p>
-      </header> */}
-      {/* 수정된 Hero 섹션 */}
       <header className="hero">
-        <div className="stars"></div> {/* 우주 배경 효과 레이어 */}
+        <div className="stars"></div> 
         
         <div className="code-window">
-          {/* 상단 바 버튼들 */}
           <div className="window-header">
             <div className="action-buttons">
               <span className="dot red"></span>
@@ -87,7 +87,6 @@ function App() {
             <div className="file-tab">about_me.js</div>
           </div>
 
-          {/* 코드 편집기 본문 */}
           <div className="code-body">
             <div className="line-numbers">
               <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
@@ -102,7 +101,6 @@ function App() {
                   {"}"};
                 </code>
               </pre>
-              {/* 타이핑 애니메이션 제목 */}
               <h2 className="typing-title">{displayText}<span className="cursor"></span></h2>
               <p className="hero-subtitle">
                 안녕하세요 사용자가 오래 머무르고 싶은 웹사이트를 제작하는 <br/> 프론트엔드 개발자 홍현주입니다.<br/>
