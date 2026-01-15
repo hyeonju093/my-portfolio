@@ -1,15 +1,23 @@
 import React, { useState, useEffect } from 'react';
+import ProjectModal from './components/ProjectModal';
 import profileimg from './assets/profile.jpg.webp';
 import portfolioImg from './assets/portfolioimg.jpg';
 import capstoneImg from './assets/teamprojectimg.jpg';
 import shopImg from './assets/shoppingmallimg.jpg';
-import './App.css'; // 작성한 CSS 불러오기
+import './App.css';
 import { Tags } from 'lucide-react';
 
 function App() {
   const [currentIdx, setCurrentIdx] = useState(0);
   const [displayText, setDisplayText] = useState("");
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
   const fullText = "안녕하세요 프론트엔드 개발자 홍현주입니다.";
+
+  const handleViewMore = (project) => {
+    setSelectedProject(project);
+    setIsOpen(true);
+  };
 
   useEffect(() => {
     let i = 0;
@@ -29,6 +37,8 @@ function App() {
       title: "캡스톤디자인(낙상감지시스템)",
       period: "2025.02 - 2025.11",
       description: "인공지능(MediaPipe, PyTorch)과 Django를 결합하여 실시간 낙상 감지 시스템을 제작했습니다 저는 팀프젝트에서 프론트엔드 구현을 맡았고 HTML을 사용해 프론트엔드를 구현했습니다",
+      detailDescription: `기술 스택 : HTML5, CSS, JavaScript, Flask, OpenCV\n주요 기능: 동적 상태 알림 UI, 끊김 없는 영상 스트리밍, 관리자용 대시보드 레이아웃
+기술적 해결 과정\n(1) MJPEG를 활용한 실시간 데이터 시각화\n(2) 서버 사이드 렌더링 기반 스켈레톤 UI 드로잉`,
       image: capstoneImg,
       tags: ["HTML", "CSS", "JavaScript"],
       link: "https://github.com/TimePise/Capstone-Design"
@@ -37,6 +47,8 @@ function App() {
       title: "웹 사이트 포트폴리오",
       period: "2025.12 - 2026.01",
       description: "React와 Vite를 사용하여 프론트엔드 개발자 포트폴리오를 웹사이트 형식으로 제작했습니다",
+      detailDescription: `기술 스택: React.js, Vite, JavaScript, CSS\n주요 기능: IDE 테마 인터페이스 적용, 반응형 레이아웃, 컴포넌트 기반 UI 구조
+기술적 해결 과정\n(1) React Router를 활용한 페이지 라우팅\n(2) CSS 구조화를 통한 복잡한 레이아웃 제어`,
       image: portfolioImg,
       tags: ["React", "CSS", "Vite"],
       link: "https://hyeonju.me.kr/"
@@ -45,6 +57,8 @@ function App() {
       title: "웹 쇼핑몰 구현",
       period: "2026.01",
       description: "React와 Redux Toolkit, Axios를 활용해 실무에서 많이 활용되는 기능으로 구현된 쇼핑몰 사이트를 제작하였습니다",
+      detailDescription: `기술 스택: React, Redux Toolkit, React Router, CSS Module, Axios\n주요 기능: FakeStoreAPI를 활용한 상품 탐색기능, 로그인/로그아웃 기능, 커스텀 모달창 구현
+기술적 해결 과정\n(1) Redux Toolkit을 이용한 상태 관리\n(2) LocalStorage를 활용한 데이터 지속성 유지\n(3) 사용자 경험을 고려한 모달 시스템 설계`,
       image: shopImg,
       tags: ["React", "Redux Toolkit", "CSS Modules"],
       link: "https://github.com/hyeonju093/shopping-mall-react"
@@ -211,15 +225,26 @@ function App() {
                   <span key={tag} className="project-tag">#{tag}</span>
                 ))}
               </div>
-              <a href={projectList[currentIdx].link} target="_blank" rel="noreferrer" className="view-btn">
-                Veiw Project
-              </a>
+              <div className="button-group">
+                <a href={projectList[currentIdx].link} target="_blank" rel="noreferrer" className="btn-view">
+                  Veiw Project
+                </a>
+                <button className="btn-more" onClick={() => handleViewMore(projectList[currentIdx])}>
+                  View More
+                </button>
+              </div>
             </div>
           </div>
 
           <button className="arrow next" onClick={nextProject}>&gt;</button>
         </div>
       </section>
+
+      <ProjectModal
+              isOpen={isOpen}
+              project={selectedProject}
+              onClose={() => setIsOpen(false)}
+            />
 
       <footer id="contact" className="footer-container">
         <div className="contact-info">
