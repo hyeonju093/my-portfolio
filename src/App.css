@@ -543,6 +543,10 @@ body, html {
   * {
     box-sizing: border-box !important;
   }
+
+  html, body {
+    background-color: #ffffff;
+  }
   .navbar {
     padding: 15px 20px;
     flex-direction: column;
