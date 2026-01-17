@@ -538,35 +538,11 @@ body, html {
   color: #333;
 }
 
-@media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .info-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 
 @media (max-width: 768px) {
-  .hero h2 { font-size: 1.5rem !important; }
-  .code-body { padding: 20px; }
-  .line-numbers { display: none; }
-}
-
-@media (max-width: 768px) {
-  .contact-item {
-    font-size: 24px;
+  * {
+    box-sizing: border-box !important;
   }
-  .footer-bottom {
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
   .navbar {
     padding: 15px 20px;
     flex-direction: column;
@@ -600,14 +576,21 @@ body, html {
     line-height: 1.3;
   }
 
+  .line-numbers { 
+    display: none;
+  }
+
   .about-section {
     margin-top: 60px;
     padding: 0 20px;
   }
 
   .about-container {
-    margin-left: 0;
+    margin-left: 5px !important;
+    flex-direction: column;
+    align-items: center;
     gap: 30px;
+    width: 90%;
   }
 
   .image-box {
@@ -617,14 +600,19 @@ body, html {
   }
 
   .info-grid {
-    margin-left: 0;
+    margin-left: 0 !important;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
 
   .skills-section {
-    margin: 80px auto;
+    margin-left: 20px;
     padding: 0 20px;
+    width: 90%;
+  }
+
+  .skills-section h3 {
+    margin-left: 10px;
   }
 
   .skills-board {
@@ -652,8 +640,12 @@ body, html {
   }
 
   .projects-section {
-    margin: 80px auto;
-    padding: 0 20px;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .projects-section h3 {
+    margin-left: 35px;
   }
 
   .project-card {
