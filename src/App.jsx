@@ -4,7 +4,7 @@ import profileimg from './assets/profile.jpg.webp';
 import portfolioImg from './assets/portfolioimg.jpg';
 import capstoneImg from './assets/teamprojectimg.jpg';
 import shopImg from './assets/shoppingmallimg.jpg';
-import habitAppImg from './assets/habitAppImg.jpg';
+import habitAppImg from './assets/habitAppImg.png';
 import './App.css';
 import { Tags } from 'lucide-react';
 
