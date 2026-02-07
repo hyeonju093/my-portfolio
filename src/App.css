@@ -362,6 +362,7 @@ body, html {
 .tag.js { background-color: #f7df1e; color: black; }
 .tag.react { background-color: #61dafb; color: black; }
 .tag.nextjs { background-color: #765ad3;}
+.tag.reactnative { background-color: #1f6c00}
 .tag.html { background-color: #e34f26; }
 .tag.css { background-color: #d753a7; }
 .tag.vite { background-color: #646cff; }

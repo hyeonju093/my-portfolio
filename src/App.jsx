@@ -4,6 +4,7 @@ import profileimg from './assets/profile.jpg.webp';
 import portfolioImg from './assets/portfolioimg.jpg';
 import capstoneImg from './assets/teamprojectimg.jpg';
 import shopImg from './assets/shoppingmallimg.jpg';
+import habitAppImg from './assets/habitAppImg.jpg';
 import './App.css';
 import { Tags } from 'lucide-react';
 
@@ -60,9 +61,20 @@ function App() {
       detailDescription: `기술 스택: React, Redux Toolkit, React Router, CSS Module, Axios\n주요 기능: FakeStoreAPI를 활용한 상품 탐색기능, 로그인/로그아웃 기능, 커스텀 모달창 구현
 기술적 해결 과정\n(1) Redux Toolkit을 이용한 상태 관리\n(2) LocalStorage를 활용한 데이터 지속성 유지\n(3) 사용자 경험을 고려한 모달 시스템 설계`,
       image: shopImg,
-      tags: ["React", "Redux Toolkit", "CSS Modules"],
+      tags: ["React", "Redux Toolkit", "CSS Modules", "REST API"],
       link: "https://github.com/hyeonju093/shopping-mall-react"
-    }
+    },
+    {
+      title: "습관 관리 어플 구현",
+      period: "2026.01 - 2026.02",
+      description: "React Native와 Zustand, Firebase를 활용해 하루의 습관을 관리하는 어플리케이션을 제작했습니다",
+      detailDescription: `기술 스택: React Native, Expo, TypeScript, Zustand, Firebase\n주요 기능: 로그인/회원가입 기능, 실시간 데이터 동기화, 개인화 대시보드, 성취도 시스템
+기술적 해결 과정\n(1) 사용자별 데이터 분리 및 실시간 동기화 이슈\n: 초기에는 로컬 저장소를 사용하였으나, 사용자별 데이터가 구분되지 않기에 Firebase의 Firestore를 도입하여 클라우드 기반 데이터베이스로 전환
+(2) 대규모 데이터 상태 관리 최적화\n: Zustand를 상태 관리 라이브러리로 선택하여 코드 복잡도를 낮추고, 필요한 데이터가 변경될 때만 반응하도록 최적화하여 안정적인 UI 제공`,
+      image: habitAppImg,
+      tags: ["React native", "Expo", "Firebase", "Zustand"],
+      link: "https://github.com/hyeonju093/habit-app"
+    },
   ];
 
   const nextProject = () => {
@@ -172,6 +184,7 @@ function App() {
               <span className="tag js">JavaScript</span>
               <span className="tag react">React</span>
               <span className="tag nextjs">Next.js</span>
+              <span className="tag reactnative">React Native</span>
             </div>
           </div>
 
