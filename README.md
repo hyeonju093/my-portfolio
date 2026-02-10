@@ -30,7 +30,9 @@ my-portfolio/
  ┗ README.md
 ```
 ### [Preview]
- ![portfolioimg](https://github.com/user-attachments/assets/4eb48a7d-d7fb-4c6c-9683-bc6e41eb9e62)
+<img src="./src/assets/portfolioimg.jpg" />
+<img src="./src/assets/portfolio-project-img.jpg" />
+<img src="./src/assets/portfolio-modal-img.jpg" />
 
 
 ### [Contact]
