@@ -57,7 +57,7 @@ function App() {
 3. 컴포넌트 기반 설계와 데이터 분리 : 유지보수를 고려해 반복되는 프로젝트 카드나 태그들을 재사용 가능한 컴포넌트로 분리했고, 데이터를 객체화하여 관리하고 있습니다`,
       image: portfolioImg,
       tags: ["React", "CSS", "Vite"],
-      link: "https://hyeonju.me.kr/"
+      link: "https://github.com/hyeonju093/my-portfolio"
     },
     {
       title: "웹 쇼핑몰 구현",
@@ -250,9 +250,9 @@ function App() {
                 ))}
               </div>
               <div className="button-group">
-                <a href={projectList[currentIdx].link} target="_blank" rel="noreferrer" className="btn-view">
+                {/* <a href={projectList[currentIdx].link} target="_blank" rel="noreferrer" className="btn-view">
                   Veiw Project
-                </a>
+                </a> */}
                 <button className="btn-more" onClick={() => handleViewMore(projectList[currentIdx])}>
                   View More
                 </button>

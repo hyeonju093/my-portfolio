@@ -25,7 +25,7 @@ const ProjectModal = ({ isOpen, project, onClose }) => {
                     <p className="modal-desc">{project.detailDescription}</p>
 
                     <div className="modal-footer">
-                        <a href={project.github} target='_blank' rel="noreferrer" className="modal-github-btn">
+                        <a href={project.link} target='_blank' rel="noreferrer" className="modal-github-btn">
                             Github 바로가기
                         </a>
                     </div>
