@@ -85,7 +85,7 @@ function App() {
 1. 구조 선택 과정 및 상태 관리\n- 가볍고 직관적인 상태 관리 : React Native 환경에서 직관적인 상태 관리를 위해 Zustand를 도입해 리렌더링 성능을 최적화하고, 코드 가독성을 개선했습니다
 2. 데이터 흐름\n- 데이터의 지속성과 실시간성 : 동일한 사용자가 다른 어플로 접속했을 때 데이터가 유실되는 문제와 사용자별 데이터 분리를 위해 Firebase Firestore를 활용해 실시간으로 데이터를 동기화하고 사용자별 맞춤형 대시보드를 구현했습니다
 3. 사용자의 입장 고민\n- 직관적인 인터페이스 : 사용자가 습관을 기록하는 과정에서 번거로움을 느끼면 서비스 이탈로 이어진다는 점을 주목하고, 메인 대시보드에서 체크 박스 터치 한 번만으로 즉시 상태가 업데이트 되는 one-tap 로그 기능을 구현했습니다
-4. 개발 과정에서이 도전\n- 모바일 UX 최적화 : Expo 환경을 활용해 빠른 프로토타이핑과 테스트 사이클을 구축했고, TypeScript를 적용해 유지보수가 용이한 코드 구조를 확립했습니다
+4. 개발 과정에서의 도전\n- 모바일 UX 최적화 : Expo 환경을 활용해 빠른 프로토타이핑과 테스트 사이클을 구축했고, TypeScript를 적용해 유지보수가 용이한 코드 구조를 확립했습니다
 - 실시간 성취도 시스템 : 단순히 기록을 넘어 일일/주간 성취도를 계산하도록 구현하여 사용자의 지속적인 동기부여를 이끌어냈습니다`,
       image: habitAppImg,
       tags: ["React native", "Expo", "Firebase", "Zustand"],
@@ -100,7 +100,7 @@ function App() {
 1. 구조 선택 과정 및 상태 관리\n- 예측 가능한 전역 상태 관리 : 복잡한 주가 데이터와 현재 자산, 채결 내역 간의 상호작용을 관리하기 위해 Zustand를 활용해 컴포넌트 간 데이터 흐름을 명확하게 유지했습니다
 2. 데이터 흐름\n- 주가 데이터 시각화 : Recharts 라이브러리릃 활용해 종목별 주가 변동을 차트로 시각화하였고, 주가의 상승과 하락에 따른 컬러 변경을 적용해 주가 변동성을 직관적으로 파악할 수 있도록 구현했습니다
 3. 사용자의 입장 고민\n- 신속하고 명확한 UX : 사용자가 모의 주식 매도 및 매수 시 사용 가능한 자산과 예상 결제 금액이 실시간으로 계산되도록 하여 주문 오류를 방지하고 반응성 높은 인터페이스를 제공했습니다
-4. 개발 과정에서이 도전\n- TypeScript 기반의 안전한 타입 방어 : 차트 라이브러리와 전역 데이터들 간의 타입 불일치를 방지하기 위해 Strict Interface 패턴을 적용해 빌드 안정성과 코드 유지보수성을 극대화했습니다
+4. 개발 과정에서의 도전\n- TypeScript 기반의 안전한 타입 방어 : 차트 라이브러리와 전역 데이터들 간의 타입 불일치를 방지하기 위해 Strict Interface 패턴을 적용해 빌드 안정성과 코드 유지보수성을 극대화했습니다
 - 모의 자산 및 거래 검증 로직 : 매수 시 현금 잔액 부족 및 매도 시 보유 수량 초과와 같은 예외 처리를 꼼꼼히 설계하여 실제 거래 환경과 유사하도록 구현했습니다`,
       image: tradingImg,
       tags: ["React", "TypeScript", "Zustand", "Recharts", "Tailwind CSS"],
@@ -215,7 +215,7 @@ function App() {
               </div>
               <div className="info-item">
                 <span className="info-label">생년월일</span>
-                <span className="info-value">2022.09.03</span>
+                <span className="info-value">2002.09.03</span>
               </div>
               <div className="info-item">
                 <span className="info-label">주소</span>
@@ -257,6 +257,7 @@ function App() {
               <span className="tag html">HTML5</span>
               <span className="tag css">CSS3</span>
               <span className="tag vite">Vite</span>
+              <span className="tag tailwind">Tailwind CSS</span>
             </div>
           </div>
 

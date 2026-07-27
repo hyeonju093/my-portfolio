@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'esamanru';
-  src: url('./font/esamanru Medium.ttf') format('truetype');
+  font-family: "esamanru";
+  src: url("./font/esamanru Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ThinDungGuenMo';
-  src: url('./font/ThinDungGeunMo.ttf') format('truetype');
+  font-family: "ThinDungGuenMo";
+  src: url("./font/ThinDungGeunMo.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -17,22 +17,25 @@
 .code-content,
 .line-numbers,
 .typing-title {
-  font-family: 'ThinDungGuenMo', monospace !important;
+  font-family: "ThinDungGuenMo", monospace !important;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'esamanru', sans-serif !important;
+  font-family: "esamanru", sans-serif !important;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background-color: #0d1117;
+  color: #c9d1d9;
 }
 
 .App {
@@ -41,7 +44,6 @@ body, html {
   margin: 0;
   padding: 0;
 }
-
 
 /* 1. Header & Nav */
 .navbar {
@@ -94,28 +96,38 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0d1117;
+  background-color: transparent;
   position: relative;
   overflow: hidden;
   padding: 0 20px;
 }
 
 .stars {
-  position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background-image: 
-    radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0));
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, #eee, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 90px 40px, #fff, rgba(0, 0, 0, 0));
   background-size: 200px 200px;
+  background-repeat: repeat;
   opacity: 0.3;
-  animation: starsAnimation 100s linear infinite;
+  animation: starsAnimation 30s linear infinite;
+  pointer-events: none;
+  z-index: 0;
 }
 
 @keyframes starsAnimation {
-  from { transform: translateY(0); }
-  to { transform: translateY(-1000px); }
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -200px;
+  }
 }
 
 .code-window {
@@ -136,24 +148,38 @@ body, html {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #30363d;
+  border-radius: 10px;
 }
 
-.action-buttons { display: flex; gap: 8px; }
-.dot { width: 12px; height: 12px; border-radius: 50%; }
-.red { background: #ff5f56; }
-.yellow { background: #ffbd2e; }
-.green { background: #27c93f; }
-.file-tab { 
-  color: #8b949e; 
-  font-size: 13px; 
-  font-family: 'monospace'; 
-  margin-left: 20px; 
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.red {
+  background: #ff5f56;
+}
+.yellow {
+  background: #ffbd2e;
+}
+.green {
+  background: #27c93f;
+}
+.file-tab {
+  color: #8b949e;
+  font-size: 13px;
+  font-family: "monospace";
+  margin-left: 20px;
 }
 
 .code-body {
   display: flex;
   padding: 30px;
-  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-family: "Consolas", "Monaco", "Courier New", monospace;
 }
 
 .line-numbers {
@@ -172,12 +198,18 @@ body, html {
   line-height: 1.5;
 }
 
-.keyword { color: #ff7b72; }
-.variable { color: #79c0ff; }
-.string { color: #a5d6ff; }
+.keyword {
+  color: #ff7b72;
+}
+.variable {
+  color: #79c0ff;
+}
+.string {
+  color: #a5d6ff;
+}
 
 .hero h2 {
-  font-size: 2.0rem !important;
+  font-size: 2rem !important;
   color: #ffffff;
   margin-top: 25px;
   margin-bottom: 15px;
@@ -203,14 +235,21 @@ body, html {
 }
 
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes blink {
-  50% { opacity: 0; }
+  50% {
+    opacity: 0;
+  }
 }
-
 
 /* 3. About Me */
 .about-section {
@@ -219,6 +258,7 @@ body, html {
   margin-top: 100px;
   padding: 0 40px;
   align-items: center;
+  /* background-color: #0d1117; */
 }
 
 .section-title {
@@ -258,12 +298,13 @@ body, html {
 }
 
 .about-content {
+  margin-top: 50px;
   flex: 1;
 }
 
 .info-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1.fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px 20px;
   margin-top: 30px;
   margin-bottom: 40px;
@@ -277,19 +318,19 @@ body, html {
 }
 
 .info-label {
-  font-size: 14px;
-  color: #999;
+  font-size: 25px;
+  color: #fff;
   font-weight: 600;
 }
 
 .info-value {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
-  color: #333;
+  color: #f0f0f0;
 }
 
 /* 4. Skills */
-.section-title{
+.section-title {
   font-size: 40px;
   margin-left: 20px;
   margin-bottom: 20px;
@@ -303,7 +344,7 @@ body, html {
 }
 
 .skills-board {
-  background-color: cornsilk;
+  background-color: #f0f0f0;
   padding: 50px 60px;
   border-radius: 20px;
   width: 100%;
@@ -320,7 +361,9 @@ body, html {
   margin-bottom: 30px;
 }
 
-.skill-group:last-child { margin-bottom: 0; }
+.skill-group:last-child {
+  margin-bottom: 0;
+}
 
 .skill-category {
   display: flex;
@@ -338,6 +381,7 @@ body, html {
   font-weight: 700;
   font-size: 25px;
   align-items: flex-start;
+  color: #000;
 }
 
 .skill-tags {
@@ -358,17 +402,44 @@ body, html {
   color: white;
 }
 
-.tag.ts { background-color: #3178c6; }
-.tag.js { background-color: #f7df1e; color: black; }
-.tag.react { background-color: #61dafb; color: black; }
-.tag.nextjs { background-color: #765ad3;}
-.tag.reactnative { background-color: #1f6c00}
-.tag.html { background-color: #e34f26; }
-.tag.css { background-color: #d753a7; }
-.tag.vite { background-color: #646cff; }
-.tag.github { background-color: #181717; }
-.tag.figma { background-color: #48c859; }
-.tag.notion { background-color: #d64c5c;}
+.tag.ts {
+  background-color: #3178c6;
+}
+.tag.js {
+  background-color: #f7df1e;
+  color: black;
+}
+.tag.react {
+  background-color: #61dafb;
+  color: black;
+}
+.tag.nextjs {
+  background-color: #765ad3;
+}
+.tag.reactnative {
+  background-color: #1f6c00;
+}
+.tag.html {
+  background-color: #e34f26;
+}
+.tag.css {
+  background-color: #d753a7;
+}
+.tag.vite {
+  background-color: #646cff;
+}
+.tag.tailwind {
+  background-color: crimson;
+}
+.tag.github {
+  background-color: #181717;
+}
+.tag.figma {
+  background-color: #48c859;
+}
+.tag.notion {
+  background-color: #d64c5c;
+}
 
 /* 5.projects */
 .projects-section {
@@ -428,21 +499,22 @@ body, html {
   text-align: left;
 }
 
-.project-info h4{
+.project-info h4 {
   font-size: 24px;
   margin-bottom: 8px;
+  color: #1c1c1c;
 }
 
 .project-period {
   font-size: 14px;
-  color: #aaa;
+  color: #1c1c1c;
   margin-bottom: 20px;
 }
 
 .project-desc {
   font-size: 16px;
   line-height: 1.6;
-  color: #666;
+  color: #282828;
 }
 
 .project-tags {
@@ -464,13 +536,14 @@ body, html {
   margin-right: 100px;
 }
 
-.btn-view, .btn-more {
+.btn-view,
+.btn-more {
   flex: 1;
   padding: 10px;
   text-align: center;
   border-radius: 10px;
   cursor: pointer;
-  font-family: 'esamanru', sans-serif;
+  font-family: "esamanru", sans-serif;
   background-color: #000000;
   color: #ffffff;
 }
@@ -479,7 +552,7 @@ body, html {
   background: none;
   border: none;
   font-size: 30px;
-  color: #000000;
+  color: #f1f1f1;
   cursor: pointer;
   transition: 0.2s;
 }
@@ -490,13 +563,14 @@ body, html {
 
 /* 6. footer */
 .footer-container {
-  background-color: #f9f9f9;
+  background-color: transparent;
   padding: 80px 0 40px 0;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  z-index: 10;
 }
 
 .contact-info {
@@ -508,7 +582,7 @@ body, html {
   font-size: 25px;
   font-weight: 400;
   margin: 10px 0;
-  color: #222;
+  color: #f0f0f0;
   letter-spacing: -1px;
 }
 
@@ -539,15 +613,11 @@ body, html {
   color: #333;
 }
 
-
 @media (max-width: 768px) {
   * {
     box-sizing: border-box !important;
   }
 
-  html, body {
-    background-color: #ffffff;
-  }
   .navbar {
     padding: 15px 20px;
     flex-direction: column;
@@ -564,7 +634,7 @@ body, html {
 
   .hero {
     height: auto;
-    padding: 100px 20px 60px; 
+    padding: 100px 20px 60px;
   }
 
   .code-window {
@@ -581,7 +651,7 @@ body, html {
     line-height: 1.3;
   }
 
-  .line-numbers { 
+  .line-numbers {
     display: none;
   }
 
