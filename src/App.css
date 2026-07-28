@@ -67,6 +67,7 @@ html {
   letter-spacing: -0.5px;
   cursor: pointer;
   user-select: none;
+  color: #1c1c1c;
 }
 
 .nav-links {
