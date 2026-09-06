@@ -41,9 +41,9 @@ my-portfolio/
 
 ### [Preview]
 
-<img src="/assets/portfolioimg.jpg" />
-<img src="/assets/portfolio-project-img.jpg" />
-<img src="/assets/portfolio-modal-img.jpg" />
+![포트폴리오 프리뷰1](./public/assets/portfolioimg.jpg)
+![포트폴리오 프리뷰2](./public/assets/portfolio-project-img.jpg)
+![포트폴리오 프리뷰3](./public/assets/portfolio-modal-img.jpt)
 
 ### [Contact]
 
