@@ -41,9 +41,9 @@ my-portfolio/
 
 ### [Preview]
 
-<img src="./src/assets/portfolioimg.jpg" />
-<img src="./src/assets/portfolio-project-img.jpg" />
-<img src="./src/assets/portfolio-modal-img.jpg" />
+<img src="/assets/portfolioimg.jpg" />
+<img src="/assets/portfolio-project-img.jpg" />
+<img src="/assets/portfolio-modal-img.jpg" />
 
 ### [Contact]
 
