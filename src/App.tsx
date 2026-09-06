@@ -73,7 +73,7 @@ export default function App() {
 3. 사용자의 입장 고민\n- 신속하고 명확한 UX : 사용자가 모의 주식 매도 및 매수 시 사용 가능한 자산과 예상 결제 금액이 실시간으로 계산되도록 하여 주문 오류를 방지하고 반응성 높은 인터페이스를 제공했습니다
 4. 개발 과정에서의 도전\n- TypeScript 기반의 안전한 타입 방어 : 차트 라이브러리와 전역 데이터들 간의 타입 불일치를 방지하기 위해 Strict Interface 패턴을 적용해 빌드 안정성과 코드 유지보수성을 극대화했습니다
 - 모의 자산 및 거래 검증 로직 : 매수 시 현금 잔액 부족 및 매도 시 보유 수량 초과와 같은 예외 처리를 꼼꼼히 설계하여 실제 거래 환경과 유사하도록 구현했습니다`,
-      image: "/assets/crypto-trading-dashboard-img.jpg",
+      image: "/assets/tradingimg.png",
       tags: ["React", "TypeScript", "Zustand", "Recharts", "Tailwind CSS"],
       link: "https://github.com/hyeonju093/crypto-trading-dashboard",
     },
