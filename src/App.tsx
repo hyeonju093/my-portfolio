@@ -29,7 +29,7 @@ export default function App() {
 1. Next.js (App Router) 마이그레이션 : 기존 React/Vite 기반 프로젝트를 Next.js App Router 구조로 마이그레이션 했고, 초기 렌더링 성능과 SEO 이점을 적용시켰습니다.
 2. IDE 테마 인터페이스 : 개발자로서의 정체성을 시각적으로 전달하기 위해 IDE 컨셉의 UI를 기획했고, 복잡한 레이아웃 대신 CSS Flexbox와 Grid를 혼합하여 반응형으로 구현했습니다
 3. 서버 컴포넌트 아키텍처 : 타이핑 효과 및 슬라이더, 모달 등 인터랙션이 필요한 영역만 클라이언트 컴포넌트로 분리 설계했습니다.`,
-      image: "/assets/portfolioimg.jpg",
+      image: "/assets/portfolioimg.png",
       tags: ["Next.js", "React", "TypeScript", "CSS"],
       link: "https://github.com/hyeonju093/my-portfolio",
     },
