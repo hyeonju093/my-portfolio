@@ -22,7 +22,7 @@ export default function App() {
     },
     {
       title: "웹 사이트 포트폴리오-개인",
-      period: "2025.12 - 2026.01",
+      period: "2025.12 - ing",
       description:
         "React와 Vite 기반으로 구축한 포트폴리오를 Next.js App Router 기반으로 마이그레이션 및 성능 최적화를 진행한 웹사이트입니다.",
       detailDescription: `기술 스택: Next.js (App Router), React, TypeScript, CSS\n주요 기능: IDE 테마 인터페이스 적용, 반응형 레이아웃, App Router 기반 아키텍처, Image & SEO 최적화
@@ -64,7 +64,7 @@ export default function App() {
     },
     {
       title: "가상 모의 투자 시스템-개인",
-      period: "2026.07.14 - 2026.07.27",
+      period: "2026.06 - 2026.07",
       description:
         "React, TypeScript, Zustand를 활용해 실시간 주가 시각화 및 가상 모의 주식 매수와 매도 거래를 제공하는 시스템을 제작했습니다 ",
       detailDescription: `기술 스택: React, TypeScript, Zustand, Vite, Tailwind CSS, Recharts\n주요 기능: 주가 시각화 차트, 가상 매수 및 매도 시스템, 포트폴리오 및 자산 현황, 채결 내역
@@ -198,7 +198,7 @@ export default function App() {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2024 Hong Hyeon-ju. All rights reserved.</p>
+          <p>© 2025 Hong Hyeon-ju. All rights reserved.</p>
           <div className="footer-links">
             <a
               href="https://github.com/hyeonju093"
